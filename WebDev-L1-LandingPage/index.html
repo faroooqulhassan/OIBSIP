@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulse Signals — Read the chart before the crowd does</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">Pulse<span class="logo-dot">.</span></a>
+    <nav class="main-nav">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+    <a href="#get-started" class="btn btn-primary nav-cta">Get the indicator</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <h1>Read the chart<br>before the crowd does.</h1>
+        <p class="hero-sub">Pulse overlays BBMA trend bands and ribbon confluence on TradingView and MetaTrader, so a setup is either there or it isn't — no more guessing which moving average to trust.</p>
+        <div class="hero-actions">
+          <a href="#get-started" class="btn btn-primary">Start free trial</a>
+          <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
+        </div>
+        <p class="hero-note">Free 14-day trial on TradingView · No card required</p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg" class="chart-svg">
+          <line x1="0" y1="60" x2="420" y2="60" class="grid-line"/>
+          <line x1="0" y1="140" x2="420" y2="140" class="grid-line"/>
+          <line x1="0" y1="220" x2="420" y2="220" class="grid-line"/>
+          <line x1="0" y1="300" x2="420" y2="300" class="grid-line"/>
+          <path d="M10,230 C60,210 90,180 130,190 C170,200 190,150 230,140 C270,130 290,90 330,80 C360,72 390,60 410,40" class="ribbon ribbon-slow"/>
+          <path d="M10,245 C60,235 90,200 130,205 C170,210 190,170 230,160 C270,150 290,110 330,100 C360,92 390,78 410,58" class="ribbon ribbon-fast"/>
+          <g class="candles">
+            <rect x="30"  y="200" width="10" height="34" class="candle up"/><line x1="35" y1="190" x2="35" y2="244" class="wick up"/>
+            <rect x="60"  y="188" width="10" height="26" class="candle down"/><line x1="65" y1="178" x2="65" y2="222" class="wick down"/>
+            <rect x="90"  y="196" width="10" height="30" class="candle up"/><line x1="95" y1="186" x2="95" y2="234" class="wick up"/>
+            <rect x="120" y="176" width="10" height="24" class="candle up"/><line x1="125" y1="166" x2="125" y2="208" class="wick up"/>
+            <rect x="150" y="184" width="10" height="20" class="candle down"/><line x1="155" y1="174" x2="155" y2="212" class="wick down"/>
+            <rect x="180" y="160" width="10" height="28" class="candle up"/><line x1="185" y1="150" x2="185" y2="196" class="wick up"/>
+            <rect x="210" y="148" width="10" height="22" class="candle up"/><line x1="215" y1="138" x2="215" y2="178" class="wick up"/>
+            <rect x="240" y="132" width="10" height="26" class="candle up"/><line x1="245" y1="122" x2="245" y2="166" class="wick up"/>
+            <rect x="270" y="120" width="10" height="18" class="candle down"/><line x1="275" y1="110" x2="275" y2="146" class="wick down"/>
+            <rect x="300" y="100" width="10" height="24" class="candle up"/><line x1="305" y1="90"  x2="305" y2="132" class="wick up"/>
+            <rect x="330" y="82"  width="10" height="20" class="candle up"/><line x1="335" y1="72"  x2="335" y2="110" class="wick up"/>
+            <rect x="360" y="66"  width="10" height="22" class="candle up"/><line x1="365" y1="56"  x2="365" y2="96"  class="wick up"/>
+          </g>
+          <circle cx="330" cy="80" r="5" class="signal-dot"/>
+          <text x="342" y="70" class="signal-label">confluence</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section features">
+    <div class="wrap">
+      <h2>Four indicators, one ruleset</h2>
+      <p class="section-lede">Pulse is not a bundle of unrelated tools. Every layer reads off the same BBMA logic, so what you see on the 5-minute chart agrees with what you see on the 4-hour.</p>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Trend bands</h3>
+          <p>A moving-average envelope that widens and tightens with volatility, marking where price is extended versus fair.</p>
+        </div>
+        <div class="feature">
+          <h3>Ribbon confluence</h3>
+          <p>Fast and slow ribbons highlight only when they stack in order — the rest of the time they stay quiet on purpose.</p>
+        </div>
+        <div class="feature">
+          <h3>Signal alerts</h3>
+          <p>Push and webhook alerts fire on confirmed confluence, not on every crossover, so your phone isn't buzzing all session.</p>
+        </div>
+        <div class="feature">
+          <h3>Multi-timeframe sync</h3>
+          <p>Check the higher timeframe bias without leaving your chart — Pulse pulls it into a small panel in the corner.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="section how-it-works">
+    <div class="wrap">
+      <h2>Set up in three steps</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-number">1</span>
+          <div>
+            <h3>Add it to your chart</h3>
+            <p>Install Pulse from the TradingView indicator library or import the MT5 template — both ship with the same defaults.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-number">2</span>
+          <div>
+            <h3>Pick your pair and timeframe</h3>
+            <p>Bands and ribbons recalculate instantly. Presets are tuned for XAUUSD and majors, but every input stays editable.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-number">3</span>
+          <div>
+            <h3>Wait for confluence</h3>
+            <p>Pulse marks the bar where bands, ribbons, and structure agree. You decide whether to act on it.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="reviews" class="section reviews">
+    <div class="wrap">
+      <h2>Traders using Pulse day to day</h2>
+      <div class="review-list">
+        <blockquote class="review">
+          <p>"I stopped redrawing moving averages every morning. The ribbon either lines up or it doesn't, and that's the whole decision."</p>
+          <cite>— Hamza R., intraday gold trader</cite>
+        </blockquote>
+        <blockquote class="review">
+          <p>"The multi-timeframe panel is the part I'd miss most. I used to keep four tabs open just to check higher-timeframe bias."</p>
+          <cite>— Ayesha K., swing trader, EUR pairs</cite>
+        </blockquote>
+        <blockquote class="review">
+          <p>"Alerts only fire on real confluence, so I finally muted the rest of my indicator alerts. My phone thanks me."</p>
+          <cite>— Daniyal S., part-time forex trader</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="get-started" class="section cta-band">
+    <div class="wrap cta-inner">
+      <h2>Put Pulse on your next chart.</h2>
+      <p>Free for 14 days on TradingView. Cancel anytime, keep your chart layout.</p>
+      <a href="#" class="btn btn-primary">Start free trial</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="logo">Pulse<span class="logo-dot">.</span></a>
+      <p>BBMA-based chart tools for TradingView and MetaTrader.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:hello@pulsesignals.app">hello@pulsesignals.app</a>
+      <a href="#">Twitter / X</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 Pulse Signals. Built as a student project — not investment advice.</p>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const mainNav = document.querySelector('.main-nav');
+  navToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  document.querySelectorAll('.main-nav a, .nav-cta').forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>
