@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farooq Ul Hassan — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">Farooq Ul Hassan</a>
+    <nav class="main-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Computer Science student, PMAS-AAUR Rawalpindi</p>
+        <h1>Farooq Ul Hassan</h1>
+        <p class="hero-role">Web Developer — HTML/CSS, JavaScript, React &amp; Next.js</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-avatar" aria-hidden="true">
+        <div class="avatar-frame">FH</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <p class="about-text">
+        I'm a Computer Science student at PMAS Arid Agriculture University, Rawalpindi,
+        building websites and web apps end to end — from static landing pages to
+        multi-page Next.js applications. I like projects that ship: a real deployment,
+        a working demo, something a client or a classmate can actually click through.
+      </p>
+      <p class="about-text">
+        Outside coursework, I explore freelance web development and build small
+        practical tools — a GPA calculator used by students on real grading schemes,
+        and a real-estate demo site built to pitch web design services to local agencies.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Next.js</li>
+        <li>WordPress</li>
+        <li>Responsive design</li>
+        <li>Git &amp; GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <div class="project-info">
+          <h3>GradeMate</h3>
+          <p>A GPA/CGPA calculator built as a single self-contained HTML/JS tool,
+             supporting both Virtual University and PMAS-AAUR grading schemes —
+             used by classmates each semester to check their standing.</p>
+          <p class="project-stack">HTML · CSS · JavaScript</p>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">View code on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-info">
+          <h3>NextScope</h3>
+          <p>A multi-page Next.js 15 project built for a university assignment,
+             demonstrating the App Router, dynamic routing, and a mix of
+             server and client components.</p>
+          <p class="project-stack">Next.js · React</p>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">View code on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-info">
+          <h3>MERIDIAN Estates</h3>
+          <p>A premium single-file luxury real-estate demo site with scroll-driven
+             animation, built as a cold-outreach piece for pitching web design
+             services to real estate agencies. Live on Vercel.</p>
+          <p class="project-stack">HTML · CSS · JavaScript · GSAP</p>
+        </div>
+        <div class="project-links">
+          <a href="https://meridian-estates-nine.vercel.app" class="project-link" target="_blank" rel="noopener">View live site →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="wrap contact-inner">
+      <h2>Let's work together</h2>
+      <p>Open to freelance web development work and internship opportunities.</p>
+      <a href="mailto:faroooq.ul.hassan@gmail.com" class="contact-email">faroooq.ul.hassan@gmail.com</a>
+      <div class="contact-links">
+        <a href="https://linkedin.com/in/farooq-ul-hassan-12b324296" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/faroooqulhassan" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 Farooq Ul Hassan. Built with HTML &amp; CSS.</p>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const mainNav = document.querySelector('.main-nav');
+  navToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  document.querySelectorAll('.main-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>
